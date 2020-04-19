@@ -70,6 +70,29 @@ P(B/A)   = P(A ⋂ B)/P(A)
 ### 2) Regression
 ![Screenshot 2020-04-19 at 11 58 32 AM](https://user-images.githubusercontent.com/59559365/79681364-6e167880-8237-11ea-9aba-a5d14a90bb86.png)
 
+This is the data which we have up till now. These data has 3 stages as we discussed in the Introduction. We need to compute the parameters of stage 1 and we have to try to find the reaction between stage 2 and stage 3. But first we need to know what is the individual number of cases/day.
+
+The graph will be
+
+
+
+This graph has Peaks because the person who get infected on the first day has detected on the 14th day. Hence because of this continuous process the graph has peaks. We need to find the relation between the stage 1 peak and the rest of the stages peak.
+Computing of all the parameters will be
+ 
+Number of cases = Q + (X*Stage1*P(A/B)) - recovered - dead
+
+To Compute number of Recovery Rate.
+
+P(Recovery rate) = (No of success/Total number of cases)
+
+P(Death rate) = (No of death / Total number of cases)
+
+Q will be calculated in the regression model i.e coefficient of particular stage
+
+
+
+
+Our model will make run time decision. It will take the inputs from infected person about its activity. And  according to that we can predict the number of cases after 14 days. Other than that If we want to predict for today , our model will take the data of previous 14 days and will process accordingly
 
 
 
