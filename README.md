@@ -31,6 +31,26 @@ Let’s consider 2 sets P(A) and P(B) to calculate the probability. Where P(A) s
 Here P(A ⋂ B) are nothing but the unknown probability of infected citizens. This P(A ⋂ B) will become P(A) after 14 days    and    another P(A ⋂ B) will form. The recovered person will go from set A to B and the casualties will go in the Universe U. 
 
 Now set P(A) and set P(B)is known to us but P(A ⋂ B) is unknown to us. We need to find the probability of infection under the condition with P(A) 
+The Mathematical equation of probability of infection under the condition with P(A) will be
+P(B/A)  = P(A ⋂ B)/P(A)
+Here,
+P(B/A) = P(A ⋂ B)/P(A)
+P(A) = Given
+P(A ⋂ B)  = Unknown.
+To Calculate P(A ⋂B)
+	The first question to find P(A ⋂ B) is, How many person can a single person can infect? The answer to this question is that it depend from person to person. Hence we need to make levels for that. Level1 indicates that the person is in home and the chances of infection is with their family members. Level2 indicates that the person has gone outside for some work. Level3 indicates that the person has gone in some crowded place . Hence the calculation for a single person will be
+Level1 = X*1 (this value will be approximately equal to 4 )
+Level2 = X*1(the value of X will come from regression 			part)
+Level3 = X*1(The value of X will come from 					regression part)
+This calculation is for single person. For multiple person the equation will become
+Level1  = X*m
+Level2  = X*m
+Level3  = X*m  . And so on.
+A ⋂ B    =  ∑ ( ∑ Levels) (i)
+P(A ⋂ B) =   (A ⋂ B) / maximum chances of infection
+Hence ,
+P(B/A)   = P(A ⋂ B)/P(A)
+
 
 
 
