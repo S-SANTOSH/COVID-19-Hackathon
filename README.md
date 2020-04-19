@@ -68,6 +68,8 @@ Hence ,
 
 P(B/A)   = P(A ⋂ B)/P(A)
 ### 2) Regression
+![Screenshot 2020-04-19 at 11 58 32 AM](https://user-images.githubusercontent.com/59559365/79681364-6e167880-8237-11ea-9aba-a5d14a90bb86.png)
+
 
 
 
