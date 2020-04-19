@@ -20,7 +20,7 @@ B-Tech 2nd year
 
 ### Pandemic Forecasting. 
 
-***Abstract : Todays world is suffering with one of the deadliest virus known as Corona Virus or n-COVID-19. This virus give major damage by its rate of infection. Hence for preparation we need some statistical information about this rate of infection so that we can plan for our next step. To apply machine learning, we don’t have enough data with available data we can make wrong prediction also. Hence it is very important that we cover all the parameters that is required to predict the rate of infection of such deadliest pandemic.***. 
+***Abstract : Todays world is suffering with one of the deadliest virus known as Corona Virus or n-COVID-19. This virus give major damage by its rate of infection. Hence for preparation we need some statistical information about this rate of infection so that we can plan for our next step. To apply machine learning, we don’t have enough data, With available data we can make wrong prediction also. Hence it is very important that we cover all the parameters that is required to predict the rate of infection of such deadliest pandemic.*** 
 
 ### Introduction. 
 
@@ -32,7 +32,7 @@ stage2 infection is person to person transmission which has some  range of infec
 	
 stage3 infection is community to community transmission which cause wide range of infection and after that Level increases on the basis of casualties. 
 	
-The man part is that the infected person doesn’t have ay knowledge about his infection under 14 age hence after 14 days all cases appears at the same time. Let's discuss about the architecture on which we are working.   
+The man part is that the infected person doesn’t have any knowledge about his infection under 14 age hence after 14 days all cases appears at the same time. Let's discuss about the architecture on which we are working.   
 ### Architecture
 ![Screenshot 2020-04-19 at 11 48 34 AM](https://user-images.githubusercontent.com/59559365/79681126-ff382000-8234-11ea-84f8-601b6d2d5d37.png)
 ### Methodology (Process)
@@ -40,7 +40,7 @@ The expected graph of rate of COVID-19 with respect to no of days will be
 
 ![Screenshot 2020-04-19 at 11 58 11 AM](https://user-images.githubusercontent.com/59559365/79681170-a87f1600-8235-11ea-9241-6d92a68786fb.png)
 
-The reason behind this graph is that none of the country has completely won with this corona virus. Hence it is just infection period . The another phase is a prevention period in which the number of cases will go down and the recovery rate starts. This can be possible when the vaccination of the disease will  invent. But the thing is the vaccination requires time and till that we have to avoid the growth of infection and try to maintain the figure which is present at the peak. Where the number of cases is minimum. To make plan for minimisation we need to check the idea. Which can be done with the help of this model. 
+The reason behind this graph is that we don't have the complete dataset . It is just infection period . The another phase is a prevention period in which the number of cases will go down and the recovery rate starts. This can be possible when the vaccination of the disease will  invent. But the vaccination requires time and till that we have to avoid the growth of infection and try to maintain the figure which is present at the peak. Where the number of cases is minimum. To make plan for minimisation we need to check the idea. Which can be done with the help of this model. 
 ### Model
 #### 1) Probability
 Let’s consider 2 sets P(A) and P(B) to calculate the probability. Where P(A) stands for probability of Infected person and P(B) stands for probability of Not infected person. The Venn-diagram will look like  
@@ -48,7 +48,7 @@ Let’s consider 2 sets P(A) and P(B) to calculate the probability. Where P(A) s
 
 Here P(A ⋂ B) are nothing but the unknown probability of infected citizens. This P(A ⋂ B) will become P(A) after 14 days    and    another P(A ⋂ B) will form. The recovered person will go from set A to B and the casualties will go in the Universe U. 
 
-Now set P(A) and set P(B)is known to us but P(A ⋂ B) is unknown to us. We need to find the probability of infection under the condition with P(A) 
+Now set P(A) and set P(B) is known to us but P(A ⋂ B) is unknown to us. We need to find the probability of infection under the condition with P(A) 
 The Mathematical equation of probability of infection under the condition with P(A) will be
 P(B/A)  = P(A ⋂ B)/P(A)
 
@@ -60,9 +60,9 @@ P(A) = Given
 
 P(A ⋂ B)  = Unknown.
 
-To Calculate P(A ⋂B)
+To Calculate P(A ⋂ B)
 
-The first question to find P(A ⋂ B) is, How many person can a single person can infect? The answer to this question is that it depend from person to person. Hence we need to make levels for that. Level1 indicates that the person is in home and the chances of infection is with their family members. Level2 indicates that the person has gone outside for some work. Level3 indicates that the person has gone in some crowded place . Hence the calculation for a single person will be
+The first question is to find P(A ⋂ B) is, How many person can a single person can infect? The answer to this question is that it depend from person to person. Hence we need to make levels for that. Level1 indicates that the person is in home and the chances of infection is with their family members. Level2 indicates that the person has gone outside for some work. Level3 indicates that the person has gone in some crowded place . Hence the calculation for a single person will be
 
 Level1 = X*1 (this value will be approximately equal to 4 )
 
@@ -154,13 +154,13 @@ The next step is to find P(A ⋂ B)
 
 P(A ⋂ B) = (A ⋂ B) / maximum number of cases
 
-In eg P(A ⋂ B) = 44 / 100  where maximum number of cases will be maximum number of the highest Level for that particular case.
+In our eg P(A ⋂ B) = 44 / 100  where maximum number of cases will be maximum number of the highest Level for that particular case.
 
-After this we can fine P(B/A)
+After this we can find P(B/A)
 
 Then the next step is to find the parameters of the stage 1 hypothesis. 
 
-Suppose x is input , y is output and spread is predicted output
+Suppose x is input , y is output and ypread is predicted output
 
 ypread = m * x (stage 1 is a straight line starting from 0) 
 
@@ -184,7 +184,7 @@ Firstly the authorised person will add the data into the machine of previous 14 
 1. Anaconda environment for Python with 3.7 version
 2. Libraries like numpy , pandas and matplotlib which is already available in anaconda environment.
 3. We are just focused on the output part hence , we will get output on our notebook only.
-4. covid19india.org is used for data.
+4. The data was taken from covid19india.org.
 ### Data Preprocessing
 1. Data was taken from covid19india.org. Hence at that time only the useful data is converted into .csv file and loaded into  the code.
 2. The data is converted from everyday data into data of individual day.
