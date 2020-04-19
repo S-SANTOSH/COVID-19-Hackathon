@@ -184,9 +184,9 @@ Firstly the authorised person will add the data into the machine of previous 14 
 1. Anaconda environment for Python with 3.7 version
 2. Libraries like numpy , pandas and matplotlib which is already available in anaconda environment.
 3. We are just focused on the output part hence , we will get output on our notebook only.
-4. covid19india.org is used for data 
+4. covid19india.org is used for data.
 ### Data Preprocessing
-1. I took the data from covid19india.org. Hence at that time only the useful data is converted into .csv file and loaded into  the code.
+1. Data was taken from covid19india.org. Hence at that time only the useful data is converted into .csv file and loaded into  the code.
 2. The data is converted from everyday data into data of individual day.
 3. Then data is ready for regression and calculation of other parameters. 
 4. The data visualisation and other section is done in the coding part.
