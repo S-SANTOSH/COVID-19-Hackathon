@@ -95,8 +95,91 @@ Q will be calculated in the regression model i.e coefficient of particular stage
 
 Our model will make run time decision. It will take the inputs from infected person about its activity. And  according to that we can predict the number of cases after 14 days. Other than that If we want to predict for today , our model will take the data of previous 14 days and will process accordingly
 
+**Stage 1** : It is the initial stage from where the infection starts in the stage 1 the graph will be linear in nature. The number of cases will be limited to calculate P(A ⋂ B) . Maximum cases will be of Level 1 and 2.
+
+**Different Stage**: In this case the infection tries to spread with some wide extent and has some exponential graph. Actually our equation is A = A + (A ⋂ B) in which A is still linear but    A ⋂ B converts the graph from linear to exponential. The calculation of A ⋂ B will be all Level. Because there is no lockdown and infected people are spreading infection in the crowded places also. Hence all level will be useful.
+
+A ⋂ B = X * P(A ⋂ B)
+
+Where, 
+
+X is the maximum value of infection.
+
+0 <=  P(A ⋂ B)  <= 1 
+
+**Imperfect Lock down** : This is the period when the government has declared the lockdown. But the essential shops are open. Hence there is a scope of infection. Thus Level 1 and Level 2 will be there. At the same time Higher Level will also be present for the case where people are intentionally trying to spread the infection or illegal gathering and some time on the basis of fake news. 
+**Perfect Lockdown:**  After government has come up with some great strategy which causes 100 % accuracy in terms of social distancing at that time number of cases will stop . The graph will go down because of recovery of confirmed patient. That value will also be generated in our model.
+**Invention of vaccination:**  We should not forget that the lockdown is a temporary process to avoid the casualties and doctors can work peacefully to invent the vaccine of this virus which will take almost a year. Thus after the invention of the vaccine the cases will fall and world will back to normal.  Hence the last part of the graph is linear with negative slope. 
+### Implementation
+For Implementing ,we will use python language. Our first step will to classify the levels.
+
+For eg: Suppose
+
+Stage 1 = 1
+
+Stage 2 = 100 * stage 1
+
+Stage 3 = 1000 * stage 1
+
+The value in this example i.e 1 , 100 , 1000 will be calculated in our model on the basis of statistics.
+
+Then we will calculate A ⋂ B on the basis of levels
+
+For eg : one infected person has gone in a grocery shop and present at home. For this case the calculation will be 
+
+A ⋂ B = 4*1 + 4*10 = 4 + 40 = 44
+
+For multiple cases A ⋂ B = ∑ (Level1 * n1) + (Level 2 * n2)+ …
+
+Where Level 1 is 4 and Level 2 = 40 and n1 and n2 is no of infected person 
+The next step is to find P(A ⋂ B)
+
+P(A ⋂ B) = (A ⋂ B) / maximum number of cases
+
+In eg P(A ⋂ B) = 44 / 100  where maximum number of cases will be maximum number of the highest Level for that particular case.
+
+After this we can fine P(B/A)
+
+Then the next step is to find the parameters of the stage 1 hypothesis. 
+
+Suppose x is input , y is output and spread is predicted output
+
+ypread = m * x (stage 1 is a straight line starting from 0) 
+
+Min(m) =  ∑ (y - ypread)i^2 / 2
+
+Hence our final equation will be 
+
+ypread = (m*x) + ( stage no * P(A/B) ) - recovered - dead
+
+Ypred = (m*x) + ( X* stage 1 * P(A/B)) - recovered - dead
+
+### The outcomes
+Firstly the authorised person will add the data into the machine of previous 14 days cases and their activities which is present in our model. The output which you will be the predicted number of cases of after 14 days. This is the case if you want todays prediction. At the same time by adding todays data you can get the number of cases of after 14 days. Hence the range of prediction is up to 14 days. The reason behind this is that it is a runtime prediction. That is the only possible range because if you directly apply machine learning the graph will never come down and you will get wrong predictions. It also dependent with the actions taken by the government. We can actually verify our plan by seeing predicted results and actual results if machine is trustable.
+
+### Advantage
+1. You can add each and every case. You need not prepare another model for any special case the levels are already given.
+2. You can get run time prediction under the range of 14 days
+3. This model can be add on if you also want sensors to detect the activity hence can become part of an IOT.
+4. Government can check their plan before implementing it
+### Requirements
+1. Anaconda environment for Python with 3.7 version
+2. Libraries like numpy , pandas and matplotlib which is already available in anaconda environment.
+3. We are just focused on the output part hence , we will get output on our notebook only.
+4. covid19india.org is used for data 
+### Data Preprocessing
+1. I took the data from covid19india.org. Hence at that time only the useful data is converted into .csv file and loaded into  the code.
+2. The data is converted from everyday data into data of individual day.
+3. Then data is ready for regression and calculation of other parameters. 
+4. The data visualisation and other section is done in the coding part.
+### Reference
+1. https://www.brookings.edu/blog/up-front/2020/03/27/covid-19-does-india-have-enough-doctors-an-analysis-of-growing-covid-19-2. patients-and-existing-medical-capacity/
+3. https://www.covid19india.org/
+4. https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/586-covid-19-hospitals-with-1-lakh-isolation-5beds-over-11k-icu-beds-across-country-health-ministry/articleshow/75097529.cms?from=mdr
+5. https://www.worldometers.info/coronavirus/?
+6 . https://www.mygov.in/covid-19/?cbps=1
+7. https://zeenews.india.com/
+8. https://www.indiatvnews.com/
 
 
-
-
-
+Thank you
