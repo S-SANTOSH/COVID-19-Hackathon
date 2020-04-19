@@ -181,5 +181,4 @@ Firstly the authorised person will add the data into the machine of previous 14 
 7. https://zeenews.india.com/
 8. https://www.indiatvnews.com/
 
-
-Thank you
+# Thank you
