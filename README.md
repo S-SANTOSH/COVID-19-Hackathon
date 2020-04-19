@@ -17,5 +17,7 @@ stage3 infection is community to community transmission which cause wide range o
 The man part is that the infected person doesn’t have ay knowledge about his infection under 14 age hence after 14 days all cases appears at the same time. Let's discuss about the architecture on which we are working.   
 ### Architecture
 ![Screenshot 2020-04-19 at 11 48 34 AM](https://user-images.githubusercontent.com/59559365/79681126-ff382000-8234-11ea-84f8-601b6d2d5d37.png)
+### Methodology (Process)
+
 
 
