@@ -78,7 +78,8 @@ The graph will be
 
 This graph has Peaks because the person who get infected on the first day has detected on the 14th day. Hence because of this continuous process the graph has peaks. We need to find the relation between the stage 1 peak and the rest of the stages peak.
 Computing of all the parameters will be
- 
+![Screenshot 2020-04-19 at 11 59 01 AM](https://user-images.githubusercontent.com/59559365/79681441-f563ec00-8237-11ea-93e3-457c5811a8c5.png)
+
 Number of cases = Q + (X*Stage1*P(A/B)) - recovered - dead
 
 To Compute number of Recovery Rate.
@@ -89,7 +90,7 @@ P(Death rate) = (No of death / Total number of cases)
 
 Q will be calculated in the regression model i.e coefficient of particular stage
 
-
+![Screenshot 2020-04-19 at 11 59 12 AM](https://user-images.githubusercontent.com/59559365/79681442-f72daf80-8237-11ea-812a-3e75b21e4e21.png)
 
 
 Our model will make run time decision. It will take the inputs from infected person about its activity. And  according to that we can predict the number of cases after 14 days. Other than that If we want to predict for today , our model will take the data of previous 14 days and will process accordingly
