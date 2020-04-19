@@ -22,8 +22,14 @@ The expected graph of rate of COVID-19 with respect to no of days will be
 
 ![Screenshot 2020-04-19 at 11 58 11 AM](https://user-images.githubusercontent.com/59559365/79681170-a87f1600-8235-11ea-9241-6d92a68786fb.png)
 
-   The reason behind this graph is that none of the country has completely won with this corona virus. Hence it is just infection period . The another phase is a prevention period in which the number of cases will go down and the recovery rate starts. This can be possible when the vaccination of the disease will  invent. But the thing is the vaccination requires time and till that we have to avoid the growth of infection and try to maintain the figure which is present at the peak. Where the number of cases is minimum. To make plan for minimisation we need to check the idea. Which can be done with the help of this model. 
+The reason behind this graph is that none of the country has completely won with this corona virus. Hence it is just infection period . The another phase is a prevention period in which the number of cases will go down and the recovery rate starts. This can be possible when the vaccination of the disease will  invent. But the thing is the vaccination requires time and till that we have to avoid the growth of infection and try to maintain the figure which is present at the peak. Where the number of cases is minimum. To make plan for minimisation we need to check the idea. Which can be done with the help of this model. 
+### Model
+#### 1) Probability
+Let’s consider 2 sets P(A) and P(B) to calculate the probability. Where P(A) stands for probability of Infected person and P(B) stands for probability of Not infected person. The Venn-diagram will look like  
 
+Here P(A ⋂ B) are nothing but the unknown probability of infected citizens. This P(A ⋂ B) will become P(A) after 14 days    and    another P(A ⋂ B) will form. The recovered person will go from set A to B and the casualties will go in the Universe U. 
+
+Now set P(A) and set P(B)is known to us but P(A ⋂ B) is unknown to us. We need to find the probability of infection under the condition with P(A) 
 
 
 
