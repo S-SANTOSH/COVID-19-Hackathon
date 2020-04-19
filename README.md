@@ -26,6 +26,7 @@ The reason behind this graph is that none of the country has completely won with
 ### Model
 #### 1) Probability
 Let’s consider 2 sets P(A) and P(B) to calculate the probability. Where P(A) stands for probability of Infected person and P(B) stands for probability of Not infected person. The Venn-diagram will look like  
+![Screenshot 2020-04-19 at 11 58 22 AM](https://user-images.githubusercontent.com/59559365/79681261-7e7a2380-8236-11ea-9f05-33f40a31f30c.png)
 
 Here P(A ⋂ B) are nothing but the unknown probability of infected citizens. This P(A ⋂ B) will become P(A) after 14 days    and    another P(A ⋂ B) will form. The recovered person will go from set A to B and the casualties will go in the Universe U. 
 
