@@ -15,3 +15,5 @@ stage2 infection is person to person transmission which has some  range of infec
 stage3 infection is community to community transmission which cause wide range of infection and after that Level increases on the basis of casualties. 
 	
 The man part is that the infected person doesn’t have ay knowledge about his infection under 14 age hence after 14 days all cases appears at the same time. Let's discuss about the architecture on which we are working.   
+### Architecture
+![picture](desktop/Screenshot 2020-04-19 at 11.48.34 AM)
