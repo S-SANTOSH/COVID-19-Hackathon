@@ -1,6 +1,6 @@
 # COVID-19-Hackathon. 
 
-### Team Name:** Symbians
+### Team Name: Symbians
 ### Team Members :
 Santosh Saxena
 Gayatri Pingale
